@@ -276,4 +276,8 @@ li a {
       -ms-flex-align: center;
           align-items: center;
 }
+
+svg {
+  padding-top: 15vh;
+}
 /*# sourceMappingURL=style.css.map */
