@@ -277,19 +277,177 @@ li a {
           align-items: center;
 }
 
+p {
+  text-align: center;
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 svg {
   padding-top: 10vh;
   height: 600px;
 }
 
 .pill_shape {
+  fill: #f2f2f2;
   fill: none;
   stroke: #000000;
+  stroke-dasharray: 1022;
+  stroke-dashoffset: 1022;
+  -webkit-animation: 3s pill-shape forwards;
+          animation: 3s pill-shape forwards;
+  opacity: 0;
 }
 
 .text1 {
   fill: none;
   stroke: #000000;
   stroke-miterlimit: 10;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  -webkit-animation: 3s text1 forwards;
+          animation: 3s text1 forwards;
+}
+
+@-webkit-keyframes pill-shape {
+  from {
+    stroke-dashoffset: 1022;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes pill-shape {
+  from {
+    stroke-dashoffset: 1022;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes text1 {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes text1 {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dasharray: 0;
+  }
+}
+
+.Star_Shape {
+  fill: #ccad58;
+  stroke: #000;
+  stroke-width: 5;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  -webkit-animation: 3s star forwards;
+          animation: 3s star forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes star {
+  from {
+    stroke-dashoffset: 250;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes star {
+  from {
+    stroke-dashoffset: 250;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    opacity: 1;
+  }
+}
+
+#Star_Text {
+  fill: #ccad58;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-dasharray: 485;
+  stroke-dashoffset: 485;
+  -webkit-animation: 3s star-text forwards;
+          animation: 3s star-text forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes star-text {
+  from {
+    stroke-dashoffset: 485;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes star-text {
+  from {
+    stroke-dashoffset: 485;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 0;
+    opacity: 1;
+  }
+}
+
+.blue {
+  fill: #2466b3;
+  opacity: 0;
+  -webkit-animation: 2.5s circ forwards;
+          animation: 2.5s circ forwards;
+}
+
+@-webkit-keyframes circ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes circ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.white:hover {
+  stroke: #f2f2f2;
+  stroke-width: 2;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  -webkit-animation: 2.5s star-text forwards;
+          animation: 2.5s star-text forwards;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
