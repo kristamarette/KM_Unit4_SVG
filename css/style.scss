@@ -277,6 +277,20 @@ header {
   //-----------KM Art Logo ------------//
 
   svg {
-    padding-top: 15vh;
+    padding-top: 10vh;
+    height: 600px;
+  }
+ 
+  .pill_shape {
+    // fill:#a5a5a5;
+    fill: none;
+    stroke:#000000;
+    
+  }
+
+  .text1 {
+    fill:none;
+    stroke:#000000;
+    stroke-miterlimit:10;
   }
   
